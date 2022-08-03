@@ -9,11 +9,29 @@
     "url": "git://github.com/bestofyour/zou_demo"
   },
   "author": "besyofyour@qq.com",
-  "dependencies": {
-    "lodash": "^4.17.21"
+  "scripts": {
+    "start": "npx webpack serve --color --progress --open "
   },
-  "keywords": ["lodash", "ramda", "test"],
+  "dependencies": {
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "awesome-typescript-loader": "^5.2.1",
+    "html-webpack-plugin": "^5.5.0",
+    "lodash": "^4.17.21",
+    "react-dom": "^18.2.0",
+    "source-map-loader": "^4.0.0",
+    "typescript": "^4.7.4",
+    "webpack": "^5.74.0"
+  },
+  "keywords": [
+    "lodash",
+    "ramda",
+    "test"
+  ],
   "devDependencies": {
-    "ramda": "^0.28.0"
+    "ramda": "^0.28.0",
+    "react": "^18.2.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3"
   }
 }
