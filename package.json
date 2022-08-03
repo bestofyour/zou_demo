@@ -1,12 +1,12 @@
 {
   "name": "zou_demo",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "main": "index.js",
-  "homepage": "https://ramdajs.com/",
+  "homepage": "https://github.com/bestofyour/zou_demo",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/ramda/ramda.git"
+    "url": "git://github.com/bestofyour/zou_demo"
   },
   "author": "besyofyour@qq.com",
   "dependencies": {
