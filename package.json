@@ -1,0 +1,19 @@
+{
+  "name": "zou_demo",
+  "version": "1.0.2",
+  "main": "index.js",
+  "homepage": "https://ramdajs.com/",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ramda/ramda.git"
+  },
+  "author": "besyofyour@qq.com",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "keywords": ["lodash", "ramda", "test"],
+  "devDependencies": {
+    "ramda": "^0.28.0"
+  }
+}
