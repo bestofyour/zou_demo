@@ -1,18 +1,21 @@
 {
-    "compilerOptions": {
-        "outDir": "./dist/",
-        "sourceMap": true,
-        "noImplicitAny": true,
-        "module": "commonjs",
-        "target": "es5",
-        "jsx": "react",
-        "baseUrl": ".",
-        "paths": {
-            "@/*":["src/*"]
-        }
-    },
-    "include": [
-        "./src/**/*.tsx",
-        "./src/**/*.ts",
-    ]
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "CommonJS",
+    "target": "ES6",
+    "jsx": "react",
+    "baseUrl": "./",
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "paths": {
+        "@/*":["src/*"]
+    }
+  },
+  "include": [
+      "./src/**/*.tsx",
+      "./src/**/*.ts",
+  ],
+  "exclude": ["node_modules"]
 }

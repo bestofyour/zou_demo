@@ -1,5 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
+const {ProgressPlugin} = require('webpack')
 module.exports = {
     entry: "./src/index.tsx",
     mode: "development",
@@ -38,7 +40,22 @@ module.exports = {
     plugins: [new HtmlWebpackPlugin({
         title: 'My App',
         template: path.resolve(__dirname, 'index.html')
-      })],
+      }), new ESLintPlugin({
+        fix: true /* 自动帮助修复 */,
+        extensions: ['js', 'jsx', 'ts', 'tsx', 'json', 'react'],
+        exclude: 'node_modules',
+      })
+,   new ProgressPlugin({
+        activeModules: false,
+        entries: true,
+        modules: true,
+        modulesCount: 5000,
+        profile: false,
+        dependencies: true,
+        dependenciesCount: 10000,
+        percentBy: 'entries',
+    }),]
+
 
     // When importing a module whose path matches one of the following, just
     // assume a corresponding global variable exists and use that instead.

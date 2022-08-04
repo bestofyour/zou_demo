@@ -1,7 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom/client';
 
-import { Board } from "@/components/index";
-ReactDOM.createRoot(
-    document.getElementById("example")
-).render( <Board  />,);
+import { Board } from '@/components/index';
+const container = document.getElementById('example') as Element;
+ReactDOM.createRoot(container).render(<Board />);
