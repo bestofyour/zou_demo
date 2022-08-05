@@ -4,10 +4,7 @@ interface Name {
 }
 import { add } from 'ramda';
 
-export class ShoppingList extends React.Component<
-  Name,
-  Record<string, unknown>
-> {
+export class ShoppingList extends React.Component<Name, Record<string, unknown>> {
   render() {
     return (
       <div className="shopping-list">
