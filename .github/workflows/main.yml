@@ -28,8 +28,6 @@ jobs:
       - name: Build image
         run: docker build -t $IMAGE_NAME .
 
-      - name: Log into DockHub
-        run: docker login -u ${{secrets.DOCKER_USERNAME}} -p ${{secrets.DOCKER_PASSWORD}}
 
       - name: Push image to DockHub
         run: |
@@ -54,7 +52,3 @@ jobs:
           echo IMAGE_ID=$IMAGE_ID
           # 打印 VERSION
           echo VERSION=$VERSION
-
-          docker tag $IMAGE_NAME ${IMAGE_ID}:$VERSION
-
-          docker push $IMAGE_ID:$VERSION
