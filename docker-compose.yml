@@ -12,5 +12,3 @@ services:
       - redis
   redis:
     image: redis
-volumes:
-  logvolume01: {}
