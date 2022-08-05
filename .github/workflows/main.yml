@@ -35,10 +35,4 @@ jobs:
         with:
           node-version: '16.x'
         run: echo node
-
-      # Runs a set of commands using the runners shell
-      - name: Build
-        run: |
-          yarn install
-          yarn start
-        run: echo "end-----------------------"
+  
