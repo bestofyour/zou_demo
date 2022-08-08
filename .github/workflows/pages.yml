@@ -41,5 +41,5 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@main
         run: |
-          yarn install
-          yarn start
+          echo '项目构建page'
+          echo '项目构建结束'
