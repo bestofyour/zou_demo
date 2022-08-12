@@ -18,6 +18,7 @@ module.exports = {
     },
     compress: true,
     port: 3000,
+    hot: true,
   },
   resolve: {
     // Add '.ts' and '.tsx' as resolvable extensions.
@@ -36,7 +37,7 @@ module.exports = {
           {
             loader: 'babel-loader',
             options: {
-              presets: ['@babel/preset-env', ['@babel/preset-react', { pragma: 'createElement' }]],
+              presets: ['@babel/preset-env', ['@babel/preset-react']],
             },
           },
           { loader: 'ts-loader' },
